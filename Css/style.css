@@ -1,0 +1,73 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kenia&family=Montserrat+Alternates:wght@100;200;300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+.body{
+ background:url(../pngwing.com\ \(3\).png);
+ min-height: 100vh;
+ background-repeat: no-repeat;
+ background-size: 70vh 100vh;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ 
+}
+#board{
+    height: 92vmin;
+    width: 90vmin;
+    background: linear-gradient(rgb(206, 225, 181), rgb(7, 118, 120));
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(18,1fr);
+    grid-template-rows: repeat(18,1fr);
+}
+
+.head{
+    background-color: rgb(0, 0, 0);
+transform: scale(1.1);
+    border-radius: 10px ;
+    border :5px solid white;
+    
+}
+.snake{
+    background-color: rgb(98, 255, 0);
+border: 0.25vmin solid rgb(0, 0, 0) ;
+    border-radius: 50% ;
+
+}
+.food{
+    background-color: rgb(255, 0, 0);
+
+    border-radius: 10px;
+
+}
+
+
+#scoreBox{
+ position: absolute;
+ top:25px;
+ right: 150px;
+ font-size: 39px;
+ font-weight: bold;   
+ border: 2px solid black;
+ padding: 2rem;
+ border-radius: 10px;
+ background: linear-gradient(rgb(220, 242, 220),rgb(178, 178, 243),rgb(225, 112, 112),rgb(228, 228, 89));
+ font-family: 'Kenia';
+}
+
+
+#highScoreBox{
+    position: absolute;
+    top:200px;
+    right: 110px;
+    font-size: 39px;
+    font-weight: bold;   
+    border: 2px solid black;
+    padding: 2rem;
+    border-radius: 10px;
+    background: linear-gradient(rgb(220, 242, 220),rgb(178, 178, 243),rgb(225, 112, 112),rgb(228, 228, 89));
+    font-family: 'Kenia';
+}
